@@ -1,0 +1,309 @@
+
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #f8ebe8;
+  --bg-color: #ba6f4d;
+  --detalhes-color: #ab7369;
+  --text-color: #dfe0df;
+  --link-color:#b78570;
+  --secundary-color: #2b2b2b;
+  --cinza-azul: #6c757d;
+}
+
+
+
+
+/*Barra de navegação*/
+.my-navbar-capsule {
+  background-color: transparent !important;
+  top: 15px; 
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.container-capsule {
+  background-color: var(--primary-color);
+  max-width: 950px; 
+  border: 1px solid rgba(0, 0, 0, 0.05); 
+}
+
+.logo-psico {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--secundary-color);
+  letter-spacing: -0.5px;
+}
+.logo-psico span {
+  font-weight: 300;
+  color: var(--cinza-azul);
+  margin-left: 2px;
+}
+
+/* Links do navbar */
+.my-navbar-capsule .caps-link {
+  color: var(--secundary-color) !important;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.2s ease;
+}
+
+/* O link Hover */
+.my-navbar-capsule .caps-link:hover {
+  color: var(--link-color) !important; 
+}
+
+
+
+/*Hero section*/
+#hero{
+  background-color: var(--bg-color);
+  min-height: 90vh; 
+  padding-top: 120px !important;
+}
+/*estilização dos textos*/
+.spanHero{
+  color: var(--primary-color); 
+  letter-spacing: 2px;
+}
+.tituloHero{
+  color: var(--primary-color);
+  line-height: 1.2;
+}
+.textoHero{
+  color: var(--text-color); 
+  font-size: 1.15rem; 
+  line-height: 1.7;
+}
+
+/* Estilização do Botão de Ação */
+.btn-hero-action {
+  background-color: var(--primary-color) !important;
+  color: var(--bg-color) !important; /* Texto na cor do fundo do site */
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+/* Hover invertendo as cores de forma elegante */
+.btn-hero-action:hover {
+  background-color: transparent !important;
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  transform: translateY(-3px); /* Leve flutuação ao passar o mouse */
+}
+
+
+/* Container posicionado para segurar as duas camadas*/
+.hero-frame-container {
+  position: relative;
+  display: inline-block;
+  padding: 0 20px 20px 0; 
+}
+/*Estilização da imagem do hero section*/
+.arco-imagem {
+  width: 100%;
+  max-width: 360px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 200px 200px 0 0; 
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.arco-moldura {
+  position: absolute;
+  width: 100%;
+  max-width: 360px;
+  height: 480px;
+  bottom: 0;
+  right: 0;
+  border: 2px solid var(--link-color); 
+  border-radius: 200px 200px 0 0; 
+  z-index: 1;
+}
+
+/*Barra de separação*/
+.espacoSeparacao{
+  background-color: var(--bg-color); 
+}
+.barraSeparacao{
+  width: 86%;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  margin: 0rem auto;
+  opacity: 0.7; 
+}
+
+
+/*Section Serviços*/
+/* Customização da lista de serviços */
+.spanServicos{
+  color: var(--secundary-color);
+   letter-spacing: 2px;
+}
+
+
+.listaServicos li {
+  position: relative;
+  padding-left: 1.5rem; /* Abre espaço para a linha marcadora */
+}
+
+/* Cria uma barrinha vertical elegante antes de cada título de serviço */
+.listaServicos li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 3px;
+  height: 1.2rem;
+  background-color: var(--link-color);
+  border-radius: 2px;
+}
+
+
+/*Seção Quem eu sou*/
+/* Foto Central do Quem Sou */
+.foto-centro {
+  max-width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 4px; /* Cantos levemente suavizados, mas retangulares */
+  position: relative;
+  z-index: 2;
+}
+
+/* Moldura fina preta/terracota deslocada por trás */
+.moldura-centro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 12px;
+  left: -12px;
+  border: 1px solid var(--link-color); /* Sua cor de detalhes */
+  border-radius: 4px;
+  z-index: 1;
+}
+
+/*  --primary-color: #f8ebe8;
+  --bg-color: #ba6f4d;
+  --detalhes-color: #ab7369;
+  --text-color: #dfe0df;
+  --link-color:#b78570;
+  --secundary-color: #2b2b2b;
+  --cinza-azul: #6c757d;*/
+
+/* Container para segurar o mapa e garantir que as bordas arredondadas do Bootstrap funcionem */
+.mapa-container {
+  overflow: hidden;
+  border: 1px solid #b78570; /* Sua cor de detalhes contornando o mapa */
+}
+
+/* Estilização dos campos do formulário */
+.custom-input {
+  background-color: rgba(248, 235, 232, 0.08) !important; /* Fundo sutil com base no seu rosa-claro */
+  border: 1px solid rgba(248, 235, 232, 0.2) !important;
+  color: #f8ebe8 !important;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.custom-input::placeholder {
+  color: rgba(223, 224, 223, 0.6) !important; /* Cor do placeholder combinando com o texto */
+}
+
+.custom-input:focus {
+  border-color: #f8ebe8 !important;
+  box-shadow: 0 0 0 0.25rem rgba(248, 235, 232, 0.1) !important;
+}
+
+/* Botão de Envio do Formulário */
+.btn-form-submit {
+  background-color: #f8ebe8 !important;
+  color: #ba6f4d !important;
+  border-radius: 6px;
+  padding: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.btn-form-submit:hover {
+  background-color: #b78570 !important;
+  color: #f8ebe8 !important;
+}
+
+/* Botão Oficial do WhatsApp */
+.btn-whatsapp-chat {
+  background-color: #25D366 !important; /* Verde oficial do WhatsApp */
+  color: #fff !important;
+  border-radius: 50px;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp-chat:hover {
+  background-color: #20ba5a !important;
+  transform: translateY(-2px);
+}
+
+
+
+
+
+/* Estilo do texto do rodapé */
+.text-rodape {
+  color: #ba6f4d; /* Sua cor principal escura sobre o fundo claro */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+
+
+/* Ajuste de alinhamento do texto no mobile */
+@media (max-width: 767.98px) {
+  #quem-sou p {
+    text-align: justify; /* Mantém justificado, mas centraliza o bloco visualmente */
+  }
+  .foto-centro {
+    height: 300px; /* Um pouco menor no celular */
+  }
+}
+
+/*Media quieres para telas de celulares*/
+@media (max-width: 991.98px) {
+
+  /*Menu Mobile*/
+  .container-capsule {
+    border-radius: 20px !important; 
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .navbar-collapse {
+    padding-top: 1rem;
+  }
+  .my-navbar-capsule .caps-link {
+    padding: 0.7rem 0 !important;
+    width: 100%;
+    text-align: left;
+  }
+
+/*hero section*/
+  .arco-imagem, .arco-moldura {
+    max-width: 280px;
+    height: 380px;
+  }
+  .hero-frame-container {
+    margin-top: 2rem;
+  }
+}
